@@ -15,7 +15,7 @@ class CityPreference {
 
     // Возвращаем город по умолчанию, если SharedPreferences пустые
     String getCity() {
-        return prefs.getString("city", "Tomsk");
+        return prefs.getString("city", "Perm");
     }
 
     void setCity(String city) {
