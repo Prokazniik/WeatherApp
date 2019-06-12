@@ -94,6 +94,13 @@ public class MainActivity extends AppCompatActivity {
                 new CityPreference(MainActivity.this).setCity(city);
             }
         });
+        chooseCity.setNeutralButton(getResources().getString(R.string.cancel), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+
         chooseCity.show();
     }
 

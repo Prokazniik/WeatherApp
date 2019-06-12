@@ -4,8 +4,9 @@
     <string name="designed_by_Romashka" translatable="false">designed by Romashka</string>
     <string name="last_update">Last update</string>
     <string name="ok" translatable="false">OK</string>
+    <string name="cancel" translatable="false">Cancel</string>
     <string name="Exit">Exit</string>
-
+//шрифты в котором зашиты изображения через чип-коды
     <string name="weather_sunny" translatable="false">&#xf00d;</string>
     <string name="weather_clear_night" translatable="false">&#xf02e;</string>
     <string name="weather_foggy" translatable="false">&#xf014;</string>
