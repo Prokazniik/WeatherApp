@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         updateWeatherData(new CityPreference(MainActivity.this).getCity());
     }
 
-    //меню
+    //класс меню
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //обработка нажатия пункта меню
+    //обработка нажатия пункта меню кнопка диалог
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_settings) showInputDialog();
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         chooseCity.show();
     }
 
-    //Обновление/загрузка погодных данных
+    //Обновление/загрузка погодных данных массив
     private void updateWeatherData(final String city) {
         new Thread() {
             public void run() {
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
                     json.getJSONObject("sys").getLong("sunset") * 1000);
 
         } catch (Exception e) {
-            Log.e("Weather", "One or more fields not found in the JSON data");
+            Log.e("Weather", "One or more fields not found in the JSON data");//искл
         }
     }
 

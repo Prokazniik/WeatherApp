@@ -13,7 +13,8 @@ class CityPreference {
         prefs = activity.getPreferences(Activity.MODE_PRIVATE);
     }
 
-    // Возвращаем город по умолчанию, если SharedPreferences пустые
+    // Если пользователь не выбрал город, на умолчанию
+    // будем показывать погоду на Пермь
     String getCity() {
         return prefs.getString("city", "Perm");
     }
